@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Tajawal", sans-serif;
+  direction: rtl;
+}
+
+body {
+  background: #000;
+  /* تحديد لون الخلفية الافتراضي في حالة عدم تحميل الفيديو */
+  overflow: hidden;
+  position: relative;
+  height: 100vh;
+}
+
+video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  opacity: 0.2;
+}
+
+a,
+ul,
+li {
+  list-style: none;
+  color: white;
+  text-decoration: none;
+}
+
+
+img {
+  max-width: 100%;
+}
+
+header {
+  background-color: rgba(1, 1, 1, 0.306);
+  position: sticky;
+  top: 0;
+  /* قم بتحديد القيمة بشكل صحيح */
+  z-index: 10000;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  height: 100px;
+  gap: 40px;
+}
+
+.logo {
+  width: 220px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav {
+  height: 100%;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+nav>ul {
+  display: flex;
+  height: inherit;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.home,
+.unit-1,
+.unit-2,
+.unit-3 {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 20%;
+  padding: 10px 20px;
+  align-items: center;
+  font-weight: 900;
+  transition: .3s;
+}
+
+.unit-1 ul,
+.unit-2 ul,
+.unit-3 ul {
+  position: absolute;
+  top: 100%;
+  left: 0px;
+  transform: translateY(10px);
+  border-radius: 7px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 7px 10px;
+  gap: 5px 0;
+  font-weight: 400;
+  background-color: #e9f6ffe0;
+  opacity: 0;
+  transition: .3s;
+}
+
+.unit-1 ul li,
+.unit-2 ul li,
+.unit-3 ul li {
+  width: 100%;
+  transition: .3s;
+  padding: 3px;
+  width: 130px;
+  margin-top: 4px;
+  text-align: center;
+  border-bottom: 1px solid #cbcbcb;
+  transition: .3s;
+}
+
+.unit-1 a,
+.unit-2 a,
+.unit-3 a {
+  transition: .3s;
+}
+
+
+
+nav ul li a.active {
+  color: #dea527
+}
+
+
+.unit-1 ul li a,
+.unit-2 ul li a,
+.unit-3 ul li a {
+  transition: .3s;
+  font-weight: bold;
+  color: black;
+}
+
+.unit-1 ul li a:hover,
+.unit-2 ul li a:hover,
+.unit-3 ul li a:hover {
+  padding-right: 6px;
+  color: #dea527;
+}
