@@ -33,6 +33,10 @@ links.forEach((link) => {
       toggleOpacity(unitThree); // تبديل الشفافية للوحدة الثالثة
       setOpacity(unitOne, 0); // تعيين الشفافية للوحدة الأولى إلى صفر
       setOpacity(unitTwo, 0); // تعيين الشفافية للوحدة الثانية إلى صفر
+    } else {
+      setOpacity(unitOne, 0); // تعيين الشفافية للوحدة الأولى إلى صفر
+      setOpacity(unitTwo, 0); // تعيين الشفافية للوحدة الثانيه إلى صفر
+      setOpacity(unitTwo, 0); // تعيين الشفافية للوحدة الثانية إلى صفر
     }
   });
 });

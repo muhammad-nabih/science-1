@@ -1,154 +1,311 @@
+/* استيراد الخطوط من Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
 
+/* إعدادات عامة */
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   font-family: "Tajawal", sans-serif;
   direction: rtl;
+  /* تحديد الاتجاه من اليمين إلى اليسار */
 }
 
+/* تنسيق الصفحة الرئيسية */
 body {
+  color: white;
+  ;
   background: #000;
-  /* تحديد لون الخلفية الافتراضي في حالة عدم تحميل الفيديو */
-  overflow: hidden;
+  /* لون خلفية الصفحة */
+  overflow-x: hidden;
+  /* إخفاء أي تدفق زائد للمحتوى */
   position: relative;
+  /* تحديد الوضع النسبي للعناصر الموجودة بداخل ال body */
   height: 100vh;
+  /* تعيين الارتفاع بالنسبة لعرض الشاشة */
 }
 
+/* تنسيق الفيديو الخلفي */
 video {
   position: absolute;
+  /* تحديد الوضع المطلق للفيديو */
   top: 0;
   left: 0;
   width: 100%;
+  /* تعيين العرض بالنسبة للشاشة */
   height: 100%;
+  /* تعيين الارتفاع بالنسبة للشاشة */
   object-fit: cover;
+  /* تحديد كيفية تناسب الفيديو داخل العنصر المرئي */
   z-index: -1;
+  /* تحديد ترتيب الطبقات لتظل الفيديو خلفية */
   opacity: 0.2;
+  /* تحديد شفافية الفيديو */
 }
 
+/* تنسيق الروابط والقوائم */
 a,
 ul,
 li {
   list-style: none;
+  /* إزالة النقاط السوداء الافتراضية للقوائم */
   color: white;
+  /* تحديد لون النص */
   text-decoration: none;
+  /* إزالة التزيين الافتراضي للروابط */
 }
 
-
-img {
-  max-width: 100%;
-}
-
+/* تنسيق رأس الصفحة */
 header {
   background-color: rgba(1, 1, 1, 0.306);
+  /* تحديد لون خلفية رأس الصفحة بنسبة شفافية */
   position: sticky;
+  /* تحديد الوضع الثابت لرأس الصفحة عند التمرير */
   top: 0;
-  /* قم بتحديد القيمة بشكل صحيح */
+  /* تثبيت رأس الصفحة في أعلى الصفحة */
   z-index: 10000;
+  /* تحديد ترتيب الطبقات لرأس الصفحة فوق العناصر الأخرى */
   display: flex;
+  /* عرض عناصر رأس الصفحة في شريط واحد */
   width: 100%;
+  /* تعيين العرض بالنسبة لعرض الشاشة */
   align-items: center;
+  /* تحديد محاذاة العناصر بالتوسط عمودياً */
   justify-content: space-between;
-  height: 100px;
+  /* توزيع العناصر بالتساوي على الشريط */
+  height: 90px;
+  /* تعيين ارتفاع رأس الصفحة */
   gap: 40px;
+  /* تحديد مسافة الفراغ بين العناصر */
 }
 
+/* تنسيق الشعار */
 .logo {
   width: 220px;
+  /* تعيين عرض الشعار */
   height: 80px;
+  /* تعيين ارتفاع الشعار */
   display: flex;
+  /* عرض الشعار كمركز */
   justify-content: center;
+  /* تحديد محاذاة الشعار بالتوسط أفقياً */
   align-items: center;
+  /* تحديد محاذاة الشعار بالتوسط عمودياً */
 }
 
+/* تنسيق قائمة التنقل */
 nav {
   height: 100%;
+  /* تعيين ارتفاع قائمة التنقل */
   flex: 1;
+  /* تعيين نسبة المرونة لقائمة التنقل */
   display: flex;
+  /* عرض عناصر قائمة التنقل في صف واحد */
   align-items: center;
+  /* تحديد محاذاة العناصر بالتوسط عمودياً */
   justify-content: center;
+  /* توزيع العناصر بالتساوي على الشريط */
 }
 
 nav>ul {
   display: flex;
+  /* عرض عناصر قائمة التنقل في صف واحد */
   height: inherit;
+  /* توريث الارتفاع من العنصر الأب */
   width: 100%;
+  /* تعيين العرض بالنسبة لعرض الشاشة */
   align-items: center;
+  /* تحديد محاذاة العناصر بالتوسط عمودياً */
   justify-content: space-between;
+  /* توزيع العناصر بالتساوي على الشريط */
 }
 
+/* تنسيق الوحدات في قائمة التنقل */
 .home,
 .unit-1,
 .unit-2,
 .unit-3 {
   display: flex;
+  /* عرض العناصر كمركز */
   flex-direction: column;
+  /* تحديد اتجاه ترتيب العناصر عمودياً */
   position: relative;
-  width: 20%;
+  /* تحديد الوضع النسبي للعناصر */
+  width: 24.66666%;
+  /* تحديد العرض بنسبة من عرض قائمة التنقل */
   padding: 10px 20px;
+  /* تحديد التباعد الداخلي للعناصر */
   align-items: center;
-  font-weight: 900;
+  /* تحديد محاذاة العناصر بالتوسط عمودياً */
+  font-weight: 700;
+  /* تحديد سمك الخط */
   transition: .3s;
+  /* تحديد مدة التحولات */
 }
 
+/* تنسيق القوائم الفرعية للوحدات */
 .unit-1 ul,
 .unit-2 ul,
 .unit-3 ul {
   position: absolute;
+  /* تحديد الوضع المطلق للقوائم الفرعية */
   top: 100%;
+  /* تحديد الوضع بنسبة للأعلى بالنسبة للوحدة الأم */
   left: 0px;
+  /* تحديد الوضع بالنسبة لليسار بالنسبة للوحدة الأم */
   transform: translateY(10px);
+  /* نقل القائمة الفرعية أسفل قليلاً لتجنب التداخل مع العناصر الأخرى */
   border-radius: 7px;
+  /* تحديد شكل الزوايا للقائمة الفرعية */
   display: flex;
+  /* عرض العناصر في القائمة الفرعية في صف واحد */
   justify-content: center;
+  /* توزيع العناصر بالتساوي في القائمة الفرعية */
   align-items: center;
+  /* تحديد محاذاة العناصر بالتوسط عمودياً في القائمة الفرعية */
   flex-direction: column;
+  /* تحديد اتجاه ترتيب العناصر في القائمة الفرعية عمودياً */
   padding: 7px 10px;
+  /* تحديد التباعد الداخلي للعناصر في القائمة الفرعية */
   gap: 5px 0;
+  /* تحديد المسافة بين العناصر في القائمة الفرعية */
   font-weight: 400;
+  /* تحديد سمك الخط للعناصر في القائمة الفرعية */
   background-color: #e9f6ffe0;
+  /* تحديد لون خلفية القائمة الفرعية */
   opacity: 0;
+  /* تحديد شفافية القائمة الفرعية بصفر لتكون غير مرئية */
   transition: .3s;
+  /* تحديد مدة التحولات للقائمة الفرعية */
 }
 
+/* تنسيق عناصر القائمة الفرعية للوحدات */
 .unit-1 ul li,
 .unit-2 ul li,
 .unit-3 ul li {
   width: 100%;
-  transition: .3s;
+  /* تعيين العرض بنسبة 100% لكل عنصر في القائمة الفرعية */
   padding: 3px;
+  /* تحديد التباعد الداخلي لكل عنصر في القائمة الفرعية */
   width: 130px;
+  /* تحديد العرض لكل عنصر في القائمة الفرعية */
   margin-top: 4px;
+  /* تحديد التباعد بين العناصر في القائمة الفرعية */
   text-align: center;
+  /* تحديد محاذاة النص في الوسط أفقياً */
   border-bottom: 1px solid #cbcbcb;
+  /* تحديد خط تحت كل عنصر في القائمة الفرعية */
   transition: .3s;
+  /* تحديد مدة التحولات */
 }
 
+/* تنسيق الروابط في القوائم الفرعية للوحدات */
 .unit-1 a,
 .unit-2 a,
 .unit-3 a {
   transition: .3s;
+  /* تحديد مدة التحولات */
 }
 
-
-
+/* تنسيق الروابط المنشطة */
 nav ul li a.active {
-  color: #dea527
+  color: #29a253;
+  /* تحديد لون النص للروابط المنشطة */
 }
 
+nav ul li a:hover {
+  color: #29a253;
+  /* تحديد لون النص للروابط المنشطة */
+}
 
+/* تنسيق الروابط في القوائم الفرعية للوحدات */
 .unit-1 ul li a,
 .unit-2 ul li a,
 .unit-3 ul li a {
   transition: .3s;
+  /* تحديد مدة التحولات */
   font-weight: bold;
+  /* تحديد سمك الخط */
   color: black;
+  /* تحديد لون النص */
 }
 
+/* تحديد تنسيق الروابط المنشطة عند التحويم فوقها */
 .unit-1 ul li a:hover,
 .unit-2 ul li a:hover,
 .unit-3 ul li a:hover {
   padding-right: 6px;
-  color: #dea527;
+  /* تحديد التباعد الداخلي للنص عند التحويم فوق الروابط */
+  color: #29a253;
+  /* تحديد لون النص عند التحويم */
 }
+
+
+/* start landing section */
+section.landing {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: calc(100vh - 90px);
+  padding: 20px;
+  border: 1px solid white;
+  overflow: hidden;
+
+}
+
+.landing .content {
+  padding: 10px;
+  flex: 1;
+}
+
+.landing .content .description {
+  position: relative;
+  text-align: justify;
+  width: 700px;
+  font-size: 16px;
+}
+
+.landing .content .description::after {
+  content: '';
+  position: absolute;
+  width: 170%;
+  height: 110%;
+  top: -6px;
+  left: 0px;
+  border-top-left-radius: 190px;
+  border-bottom-left-radius: 190px;
+  padding: 10px;
+  background: #157347b9;
+  z-index: -1;
+}
+
+.content h1 {
+  font-size: 1.6rem;
+}
+
+.content span {
+  color: #29a253;
+  font-size: 1.8rem;
+  font-weight: 900;
+}
+
+.content button {
+  font-weight: bold;
+  width: 200px;
+  margin-top: 10px;
+
+}
+
+.landing .image {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  align-items: center;
+}
+
+.landing .image img {
+  max-height: 100%;
+}
+
+/* end landing section */
