@@ -5,7 +5,6 @@ const links = document.querySelectorAll("nav > ul > li > a");
 links.forEach((link) => {
   link.addEventListener("click", (e) => {
     e.preventDefault(); // منع السلوك الافتراضي للرابط
-
     // تحديد عناصر الوحدات
     const unitOne = document.getElementById("unit1");
     const unitTwo = document.getElementById("unit2");
@@ -15,6 +14,7 @@ links.forEach((link) => {
     links.forEach((link) => {
       link.classList.remove("active");
     });
+    
     link.classList.add("active");
 
     // الحصول على قيمة الوحدة المرتبطة بالرابط
@@ -34,6 +34,9 @@ links.forEach((link) => {
       setOpacity(unitOne, 0); // تعيين الشفافية للوحدة الأولى إلى صفر
       setOpacity(unitTwo, 0); // تعيين الشفافية للوحدة الثانية إلى صفر
     } else {
+      toggleOpacity(unitThree);
+      toggleOpacity(unitOne);
+      toggleOpacity(unitTwo);
       setOpacity(unitOne, 0); // تعيين الشفافية للوحدة الأولى إلى صفر
       setOpacity(unitTwo, 0); // تعيين الشفافية للوحدة الثانيه إلى صفر
       setOpacity(unitTwo, 0); // تعيين الشفافية للوحدة الثانية إلى صفر
@@ -51,3 +54,4 @@ function toggleOpacity(element) {
 function setOpacity(element, value) {
   element.style.opacity = value; // تعيين قيمة الشفافية المحددة للعنصر
 }
+
