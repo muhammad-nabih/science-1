@@ -248,7 +248,6 @@ section.landing {
   align-items: center;
   height: calc(100vh - 90px);
   padding: 20px;
-  border: 1px solid white;
   overflow: hidden;
 
 }
