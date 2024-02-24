@@ -67,6 +67,7 @@ header {
   /* تحديد ترتيب الطبقات لرأس الصفحة فوق العناصر الأخرى */
   display: flex;
   /* عرض عناصر رأس الصفحة في شريط واحد */
+  flex-direction: row-reverse;
   width: 100%;
   /* تعيين العرض بالنسبة لعرض الشاشة */
   align-items: center;
