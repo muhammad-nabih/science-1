@@ -123,9 +123,8 @@ nav>ul {
 
 /* تنسيق الوحدات في قائمة التنقل */
 .home,
-.unit-1,
-.unit-2,
-.unit-3 {
+.term-1,
+.term-2 {
   display: flex;
   /* عرض العناصر كمركز */
   flex-direction: column;
@@ -145,9 +144,8 @@ nav>ul {
 }
 
 /* تنسيق القوائم الفرعية للوحدات */
-.unit-1 ul,
-.unit-2 ul,
-.unit-3 ul {
+.term-1 ul,
+.term-2 ul{
   width: 260px;
   position: absolute;
   /* تحديد الوضع المطلق للقوائم الفرعية */
@@ -182,9 +180,8 @@ nav>ul {
 }
 
 /* تنسيق عناصر القائمة الفرعية للوحدات */
-.unit-1 ul li,
-.unit-2 ul li,
-.unit-3 ul li {
+.term-1 ul li,
+.term-2 ul li {
   /* تعيين العرض بنسبة 100% لكل عنصر في القائمة الفرعية */
   width: 100%;
 
@@ -200,9 +197,8 @@ nav>ul {
 }
 
 /* تنسيق الروابط في القوائم الفرعية للوحدات */
-.unit-1 a,
-.unit-2 a,
-.unit-3 a {
+.term-1 a,
+.term-2 a{
   transition: .3s;
   /* تحديد مدة التحولات */
 }
@@ -219,9 +215,9 @@ nav ul li a:hover {
 }
 
 /* تنسيق الروابط في القوائم الفرعية للوحدات */
-.unit-1 ul li a,
-.unit-2 ul li a,
-.unit-3 ul li a {
+.term-1 ul li a,
+.term-2 ul li a
+ {
   transition: .3s;
   /* تحديد مدة التحولات */
   font-weight: bold;
@@ -232,9 +228,8 @@ nav ul li a:hover {
 }
 
 /* تحديد تنسيق الروابط المنشطة عند التحويم فوقها */
-.unit-1 ul li a:hover,
-.unit-2 ul li a:hover,
-.unit-3 ul li a:hover {
+.term-1 ul li a:hover,
+.term-2 ul li a:hover{
   padding-right: 6px;
   /* تحديد التباعد الداخلي للنص عند التحويم فوق الروابط */
   color: #29a253;

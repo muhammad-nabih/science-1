@@ -1,0 +1,185 @@
+/* استيراد الخطوط من Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
+
+/* إعدادات عامة */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Tajawal", sans-serif;
+    direction: rtl;
+}
+
+::selection {
+    background-color: #926747;
+    color: #bcac9e;
+}
+
+header {
+    background-color: #12372A;
+    color: #ADBC9F;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 15px 20px;
+}
+
+header h1 {
+    font-weight: 900;
+}
+
+.titleCard {
+    font-weight: 800;
+    border: 1px solid;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.card.layoutCard {
+
+    background-color: #f6f6f6;
+    transition: .3s ease-in-out;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
+}
+
+
+.card.layoutCard a {
+    transition: .3s;
+}
+
+.card.layoutCard a:hover {
+    transform: scale(1.1);
+}
+
+.card-text {
+    height: 120px;
+}
+
+@media (max-width: 1200px) {
+    .titleCard {
+        font-size: .9rem;
+    }
+}
+
+
+/* تنسيق الروابط والقوائم */
+
+ul {
+    list-style: none;
+    /* تحديد لون النص */
+
+}
+
+a {
+    text-decoration: none;
+    /* إزالة التزيين الافتراضي للروابط */
+    color: white;
+}
+
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #12372a;
+    color: #adbc9f;
+    padding: 0 20px;
+    height: 70px;
+    margin-bottom: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+nav h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    margin: 0;
+}
+
+.mark-span {
+    color: #adbc9f;
+}
+
+nav ul {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+
+}
+
+nav ul li a {
+    transition: .3s;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #adbc9f;
+    ;
+}
+
+@media(max-width:1100px) {
+
+    nav ul li a {
+        font-size: 1rem;
+    }
+
+    nav h1 {
+        font-size: 1.2rem;
+    }
+}
+
+@media(max-width:767px) {
+
+    nav ul li a {
+        font-size: .6rem;
+    }
+
+
+    nav h1 {
+        font-size: .8rem;
+    }
+}
+
+a svg {
+    color: #adbc90;
+    transition: .3s;
+}
+
+a:hover svg {
+    color: #ffffff;
+}
+
+div img {
+    max-width: 100%;
+}
+
+
+
+.row {
+    padding: 15px;
+    overflow: hidden;
+    ;
+}
+
+iframe {
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    border-radius: 15px;
+}
+
+.iframeContainer {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.titleTest {
+    font-size: 1.3rem;
+    height: 100px;
+}

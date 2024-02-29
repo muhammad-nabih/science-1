@@ -6,15 +6,14 @@ links.forEach((link) => {
   link.addEventListener("click", (e) => {
     e.preventDefault(); // منع السلوك الافتراضي للرابط
     // تحديد عناصر الوحدات
-    const unitOne = document.getElementById("unit1");
-    const unitTwo = document.getElementById("unit2");
-    const unitThree = document.getElementById("unit3");
+    const unitOne = document.getElementById("groupTermOne");
+    const unitTwo = document.getElementById("groupTermTwo");
 
     // إزالة الفئة "active" من كل الروابط ثم إضافتها إلى الرابط الحالي
     links.forEach((link) => {
       link.classList.remove("active");
     });
-    
+
     link.classList.add("active");
 
     // الحصول على قيمة الوحدة المرتبطة بالرابط
@@ -54,4 +53,3 @@ function toggleOpacity(element) {
 function setOpacity(element, value) {
   element.style.opacity = value; // تعيين قيمة الشفافية المحددة للعنصر
 }
-
